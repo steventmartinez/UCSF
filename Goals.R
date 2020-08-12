@@ -95,7 +95,7 @@ GOALS_Final <- GOALS_Final %>%
 GOALS_Final$ScanCode <- factor(GOALS_Final$ScanCode, levels=unique(GOALS_Final$ScanCode))
 
 
-###This is the worstttttt part, melting/stacking the data into individual data frames, comparing respsective timepoints vertically. For some reason which I cannot comprehend conceptually, spaghetti slots can only be created from melted data frames.
+###Melting/stacking the data into individual data frames, comparing respsective timepoints vertically. Spaghetti slots can only be created from melted data frames.
 ###When you want to add the third timepoint, you'll need to add it to each of these data frames.
 #RightHippocampus <- melt(GOALS_Final, id.vars="ScanCode", measure.vars=c("RightHippocampusV1","LeftHippocampusV2","LeftHippocampusV3"))
 
